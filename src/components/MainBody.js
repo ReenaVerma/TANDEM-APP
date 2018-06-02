@@ -18,9 +18,7 @@ const MainBody = () => (
 
       </div>
       <div className="flex-item">
-        <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
+        <img className="card-image" src="/static/images/travel.png" alt="Tandem Credit Card Image"/>
       </div>
     </div>
   </section>

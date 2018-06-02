@@ -8,9 +8,14 @@ $orange: rgb(255,167,63);
 $pink: rgb(255,15,202);
 $black: rgb(24,31,34);
 $white: #fff;
+$light-grey: #e4e4e4;
 $grey: #666;
 
 // COMPONENTS
+@import "components/_base";
 @import "components/_body";
 @import "components/_typography";
-@import "components/_header";
+@import "components/_nav";
+@import "components/_images";
+
+// MIXINS

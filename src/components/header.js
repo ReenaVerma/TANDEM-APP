@@ -4,9 +4,13 @@ import Link from 'gatsby-link';
 const Header = () => (
 
 
+
+
   <nav className="navBar">
     <div className="wrapper">
-      <div className="logo">rv</div>
+      <div className="logo">
+        <img className="logo-image" src="/static/images/tandem_logo.png" alt="Tandem Logo"/>
+      </div>
 
       <input type="checkbox" id="menu-toggle" />
       <label htmlFor="menu-toggle" className="label-toggle"></label>

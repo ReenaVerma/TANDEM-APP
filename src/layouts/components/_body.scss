@@ -1,45 +1,46 @@
+
 * {
   box-sizing: border-box;
 }
 
-body, html {
+body {
   background-color: $white;
-  font-family: 'Lato', sans-serif;;
+  font-family: 'Lato', sans-serif;
+  width: 100%;
 }
 
 main {
   padding: 0px;
   margin: 0px;
+  width: 100%;
 }
 
 section {
-  padding: 20px;
   margin: 0 auto;
-  border: 1px solid red;
   position: relative;
   top: 100px;
-  width: 95%;
+  width: 100%;
+}
 
 
-  .flex-container {
+.grey {
+    background-color: $light-grey;
+    width: 100%;
+}
 
-     display: -webkit-box;
-     display: -moz-box;
-     display: -ms-flexbox;
-     display: -webkit-flex;
-     -webkit-flex-flow: row wrap;
+.flex-container {
+
+    @include flex;
+     -webkit-flex-flow: row;
      justify-content: center;
-   }
+     padding: 40px;
 
-        .flex-item {
-          border: 1px solid green;
+        & .flex-item {
           padding: 20px;
           width: 50%;
           margin-top: 10px;
-
           line-height: 1;
           color: $black;
           font-size: 1em;
         }
-
 }

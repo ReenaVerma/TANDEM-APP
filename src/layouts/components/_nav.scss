@@ -5,6 +5,7 @@
   z-index: 2;
   border-bottom: #ccc 1px solid;
   padding: 30px 20px 0px 20px;
+  height: 100px;
 }
 
 .logo {
@@ -17,10 +18,13 @@
   text-align: center;
   color: $white;
   padding: 11px;
+  left: 50%;
+  top: 50%;
 
   &:hover {text-decoration: none;}
   &:active {text-decoration: none;}
   &:visited {text-decoration: none;}
+
 }
 
 // Content Wrapper

@@ -2,8 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
-import Header from '../components/header';
+import Header from '../components/Header';
 import MainBody from '../components/MainBody';
+import Terms from '../components/Terms';
 import './index.scss';
 
 const Layout = ({ data }) => (
@@ -18,6 +19,7 @@ const Layout = ({ data }) => (
     <main>
       <Header siteTitle={data.site.siteMetadata.title} />
       <MainBody />
+      <Terms />
     </main>
   </div>
 );
