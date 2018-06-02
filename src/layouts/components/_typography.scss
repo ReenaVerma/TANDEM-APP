@@ -1,0 +1,26 @@
+h1 {
+  font-size: 45px;
+  line-height: 1;
+  text-align: left;
+}
+
+ul, li {
+
+    &.pros {
+      font-size: 20px;
+      color: $grey;
+      line-height: 1.5;
+  }
+}
+
+p {
+  font-size: 20px;
+  color: $grey;
+  line-height: 1.5;
+
+  &.info {
+    font-size: 14px;
+    color: $black;
+    text-decoration: underline;
+  }
+}
