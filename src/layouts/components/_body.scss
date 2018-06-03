@@ -14,16 +14,12 @@ main {
 }
 
 section {
-  margin: 0 auto;
-  padding: 0px;
-  position: relative;
+  @include section-margin-padding-relative;
   top: 100px;
 }
 
 .section-grey {
-  margin: 0 auto;
-  padding: 0px;
-  position: relative;
+  @include section-margin-padding-relative;
   top: 100px;
   background-color: $light-grey;
 }
@@ -33,7 +29,6 @@ section {
   @include main-width;
   padding-top: 20px;
 }
-
 
 .grey {
   background-color: $light-grey;
@@ -45,45 +40,23 @@ section {
   @include flex;
   @include padding-LeftRight;
   @include main-width;
-  -webkit-flex-flow: row;
-  justify-content: center;
-  align-content: center;
 
   .flex-item {
-    width: 100%;
-    padding: 0px;
-    margin-top: 10px;
-    line-height: 1;
-    color: $black;
-    font-size: 1em;
+    @include flex-item-main;
   }
 
-  .one {
-    width: 60%;
-    height: 200px;
-  }
-
-  .two {
-    width: 60%;
-    height: 200px;
-  }
-
-  .three {
+  .one, .two, .three, .four {
     width: 60%;
     height: 200px;
   }
 
   .four {
-    width: 100%;
-    height: 200px;
     top: 50%;
     left: 50%;
   }
 }
 
 footer {
-  // @include main-width;
-  // padding-top: 20px;
   color: $black;
   background-color: $white;
   text-align: center;
@@ -92,32 +65,18 @@ footer {
 
 @media only screen and (max-width: 786px) {
 
-
   .row {
     width: 90%;
-  }
-
-  .row {
     text-align: left;
   }
 
   .flex-container {
-    width: 100% !important;
-    display: flex;
-    flex-flow: row wrap;
-    font-weight: bold;
+    @include flex-row-wrap;
 
     .flex-item {
       width: 90%;
     }
 
-    .one { width:90%; height: auto;}
-    .two { width:90%; height: auto;}
-    .three { width:90%; height: auto;}
-    .four {
-      width: 90%;
-      left: 0%;
-      height: auto;
+    .one, .two, .three, .four { width:90%; height: auto;}
   }
-}
 }

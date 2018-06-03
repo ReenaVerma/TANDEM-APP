@@ -4,34 +4,22 @@
 }
 
 .card-image {
-  padding: 20px;
+  @include display-margin-relative;
   max-width: 100%;
-  display: block;
-  margin: 0 auto;
-  position:relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .card-only {
-  padding: 20px;
+  @include display-margin-relative;
   max-width: 80%;
   width: auto;
   height: auto;
-  display: block;
-  margin: 0 auto;
-  position:relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .sub-img {
-  // border: 1px solid $white;
   border-radius: 15px;
   margin: 40px 20px 20px 0px;
   max-width: 80%;
   display: block;
-  // margin: 0 auto;
 }
 
 @media only screen and (min-width: 789px) and (max-width: 1199px) {
@@ -39,9 +27,7 @@
   .sub-img {
     max-width: 90%;
   }
-
 }
-
 
 @media only screen and (max-width: 786px) {
   .card-only {
@@ -49,12 +35,8 @@
   }
 
   .sub-img {
-    // border: 1px solid $white;
-    // border-radius: 15px;
     padding-top: 50px;
     margin: 0 auto;
-
     display: block;
-    // margin: 0 auto;
   }
 }
