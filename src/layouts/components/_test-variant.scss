@@ -9,7 +9,6 @@
 }
 
 
-
 .navbar > .container {
   align-items: stretch;
   display: flex;
@@ -43,7 +42,7 @@ body.has-navbar-fixed-bottom {
   min-height: 3.25rem;
 }
 
-.navbar-brand a.navbar-item:hover {
+.navbar-brand a.navbar-item-test:hover {
   background-color: transparent;
 }
 
@@ -113,9 +112,9 @@ body.has-navbar-fixed-bottom {
   display: none;
 }
 
-.navbar-item,
+.navbar-item-test,
 .navbar-link {
-  color: #4a4a4a;
+  color: #999;
   display: block;
   line-height: 1.5;
   padding: 0.5rem 0.75rem;
@@ -123,55 +122,55 @@ body.has-navbar-fixed-bottom {
   text-decoration: none;
 }
 
-.navbar-item .icon:only-child,
+.navbar-item-test .icon:only-child,
 .navbar-link .icon:only-child {
   margin-left: -0.25rem;
   margin-right: -0.25rem;
 }
 
-a.navbar-item,
+a.navbar-item-test,
 .navbar-link {
   cursor: pointer;
 }
 
-a.navbar-item:hover, a.navbar-item.is-active,
+a.navbar-item-test:hover, a.navbar-item-test.is-active,
 .navbar-link:hover,
 .navbar-link.is-active {
   background-color: #fafafa;
   color: #3273dc;
 }
 
-.navbar-item {
+.navbar-item-test {
   display: block;
   flex-grow: 0;
   flex-shrink: 0;
 }
 
-.navbar-item img {
+.navbar-item-test img {
   max-height: 1.75rem;
 }
 
-.navbar-item.has-dropdown {
+.navbar-item-test.has-dropdown {
   padding: 0;
 }
 
-.navbar-item.is-expanded {
+.navbar-item-test.is-expanded {
   flex-grow: 1;
   flex-shrink: 1;
 }
 
-.navbar-item.is-tab {
+.navbar-item-test.is-tab {
   border-bottom: 0px solid transparent;
   min-height: 3.25rem;
   padding-bottom: calc(0.5rem - 1px);
 }
 
-.navbar-item.is-tab:hover {
+.navbar-item-test.is-tab:hover {
   background-color: transparent;
   border-bottom-color: #3273dc;
 }
 
-.navbar-item.is-tab.is-active {
+.navbar-item-test.is-tab.is-active {
   background-color: transparent;
   border-bottom-color: #3273dc;
   border-bottom-style: solid;
@@ -201,7 +200,7 @@ a.navbar-item:hover, a.navbar-item.is-active,
   padding-top: 0.5rem;
 }
 
-.navbar-dropdown .navbar-item {
+.navbar-dropdown .navbar-item-test {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
@@ -218,8 +217,8 @@ a.navbar-item:hover, a.navbar-item.is-active,
   .navbar > .container {
     display: block;
   }
-  .navbar-brand .navbar-item,
-  .navbar-tabs .navbar-item {
+  .navbar-brand .navbar-item-test,
+  .navbar-tabs .navbar-item-test {
     align-items: center;
     display: flex;
   }
@@ -266,22 +265,22 @@ a.navbar-item:hover, a.navbar-item.is-active,
   .navbar-burger {
     display: none;
   }
-  .navbar-item,
+  .navbar-item-test,
   .navbar-link {
     align-items: center;
     display: flex;
   }
-  .navbar-item {
+  .navbar-item-test {
     display: flex;
   }
-  .navbar-item.has-dropdown {
+  .navbar-item-test.has-dropdown {
     align-items: stretch;
   }
-  .navbar-item.has-dropdown-up .navbar-link::after {
+  .navbar-item-test.has-dropdown-up .navbar-link::after {
     -webkit-transform: rotate(135deg) translate(0.25em, -0.25em);
             transform: rotate(135deg) translate(0.25em, -0.25em);
   }
-  .navbar-item.has-dropdown-up .navbar-dropdown {
+  .navbar-item-test.has-dropdown-up .navbar-dropdown {
     border-bottom: 2px solid #dbdbdb;
     border-radius: 6px 6px 0 0;
     border-top: none;
@@ -305,141 +304,259 @@ a.navbar-item:hover, a.navbar-item.is-active,
 }
 
 
+.navbar-test {
+  z-index: 2;
+  height: 60px;
+  position: fixed !important;
+  width: 100% !important;
+  background-color: $black;
+  padding: 0% 10% 0% 10%;
+  margin: 0 auto;
+}
 
-//
-// .navBar {
-//   background-color: $white;
-//   position: fixed;
-//   min-width: 100%;
-//   z-index: 2;
-//   padding: 0px 20px 0px 20px;
-//   height: 100px;
-//   display: flex;
-//   align-items: center;
-// }
-//
-// .logo {
-//   padding: 11px;
-//   left: 50%;
-//   top: 50%;
-//   display: block;
-// }
-// //
-// .wrapper {
-//   margin: 0 auto;
-//   @include main-width;
-//   border: $grey 0px solid;
-//   justify-content: center
-// }
-//
-// // Full Navigation, including mobile menu
-// nav {
-//   ul {
-//     display: flex;
-//     justify-content: flex-end;
-//     list-style-type: none;
-//     width: 100%;
-//
-//     a {
-//       position: relative;
-//       color: $grey;
-//       text-decoration: none;
-//
-//       &:hover {
-//         color: $grey;
-//       }
-//
-//       &:after {
-//         content: "";
-//         position: absolute;
-//         z-index: 2;
-//         left: 0;
-//         right: 100%;
-//         bottom: -5px;
-//         background: $grey;
-//         height: 2px;
-//         transition-property: left right;
-//         transition-duration: 0.1s;
-//         transition-timing-function: ease-out;
-//       }
-//
-//       &:hover:after,
-//       &:focus:after,
-//       &:active:after {
-//         right: 0;
-//       }
-//     }
-//   }
-//
-//   li  {
-//     display: inline-block;
-//     margin-right: 25px;
-//   }
-//
-//   #menu-toggle {display: none;}
-//
-//   .label-toggle {display: none;}
-//
-//   .wrapper {
-//     align-items: center;
-//     display: flex;
-//   }
-//
-// }
-//   @media only screen and (max-width: 768px) {
-//
-//     .navBar {
-//       background-color: $black;
-//     }
-//
-//     nav {
-//       ul {
-//         a {
-//           color: $black;
-//         }
-//       }
-//     }
-//
-//     ul {
-//       display: block;
-//       height: 0;
-//       list-style-type: none;
-//       opacity: 0;
-//       text-align: center;
-//       transition: all 1s ease;
-//       visibility: hidden;
-//     }
-//
-//     li {
-//       color: $grey;
-//       display: block;
-//       font-size: 1.5em;
-//       padding-top: 20px;
-//       width: 100%;
-//       margin-left: -20px;
-//     }
-//
-//     #menu-toggle:checked ~ ul {
-//       opacity: 1;
-//       height: 20vh;
-//       visibility: visible;
-//     }
-//
-//     .label-toggle {
-//       background: linear-gradient(to bottom, $grey 0%, $grey 20%, transparent 20%, transparent 40%, $grey 40%, $grey 60%, transparent 60%, transparent 80%, $grey 80%, $grey 100%); //Gradient Hamburger
-//       cursor: pointer;
-//       display: block;
-//       float: right;
-//       height: 35px;
-//       margin-top: 1em;
-//       width: 35px;
-//     }
-//
-//     .wrapper {
-//       width: 100%;
-//       display: block;
-//       margin-top: -20px;
-//       margin-bottom: -20px;
-//     }
-//   }
-// }
+.test-h1 {
+  font-size: 60px;
+  font-weight: 200;
+  color: $white;
+  text-align: center;
+}
+
+.test-h2 {
+  font-size: 30px;
+  font-weight: 200;
+  color: $grey;
+  text-align: center;
+}
+
+.test-h3 {
+  font-size: 30px;
+  color: $grey;
+  margin-top: 40px;
+}
+
+
+.section-header {
+  margin: 0 auto;
+  padding: 0px;
+  position: relative;
+  top: 80px;
+  background-color: $light-grey;
+  background-image: url(http://blogrp.todomundorp.com.br/wp-content/uploads/2016/10/iStock_000043105688_Large_1.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: block;
+  height: 70vh;
+}
+
+.percentage-test {
+  // border: 2px solid $white;
+  background-color: $orange;
+  // font-family: FontAwesome;
+  display: inline-block;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  // padding: 5em;
+  // bottom: 50%;
+  // padding: 1px;
+  // margin-right: 10px;
+
+  span {
+    margin: 0 auto;
+    color: $white;
+    font-size: 40px;
+  }
+}
+
+.flex-container-test {
+  @include flex;
+  @include padding-LeftRight;
+  @include main-width;
+  -webkit-flex-flow: row;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 50px;
+
+
+  .one {
+    text-align: center;
+    width: 60%;
+    height: 200px;
+  }
+
+  .two {
+    text-align: center;
+    width: 60%;
+    height: 200px;
+  }
+
+  .three {
+    text-align: center;
+    width: 60%;
+    height: 200px;
+  }
+
+}
+
+
+
+ul {
+  list-style: none;
+  padding: 0;
+
+  &.test-bullets {
+      font-size: 18px;
+      color: $grey;
+      line-height: 1.5;
+
+      li {
+
+      }
+
+      li:before {
+        content: "\f00c";
+        font-weight: 100;
+        text-align: center;
+        // background-color: $blue;
+        font-family: FontAwesome;
+        display: inline-block;
+        width: 1.3em;
+        border-radius: 50%;
+        margin: 0 auto;
+        padding: 1px;
+        margin-right: 10px;
+        // margin-top: 40px;
+
+      }
+
+    }
+}
+
+
+.section-white-test {
+  margin: 0 auto;
+  padding-bottom: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  top: 80px;
+  background-color: $white;
+}
+
+
+.section-grey-test {
+  margin: 0 auto;
+  padding: 0px;
+  position: relative;
+  top: 80px;
+  background-color: $light-grey;
+}
+
+.row {
+  @include padding-LeftRight;
+  @include main-width;
+  padding-top: 20px;
+}
+
+.grey {
+  background-color: $light-grey;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.flex-container {
+  @include flex;
+  @include padding-LeftRight;
+  @include main-width;
+  -webkit-flex-flow: row;
+  justify-content: center;
+  align-content: center;
+
+  .flex-item {
+    width: 100%;
+    padding: 0px;
+    margin-top: 10px;
+    line-height: 1;
+    color: $black;
+    font-size: 1em;
+  }
+
+  .one {
+    width: 60%;
+    height: 200px;
+  }
+
+  .two {
+    width: 60%;
+    height: 200px;
+  }
+
+  .three {
+    width: 60%;
+    height: 200px;
+  }
+
+  .four {
+    width: 100%;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+
+
+  .row {
+    width: 90%;
+    text-align: left;
+  }
+
+
+  .flex-container {
+    width: 100% !important;
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+
+    .flex-item {
+      width: 90%;
+    }
+
+    .one { width:90%; height: auto;}
+    .two { width:90%; height: auto;}
+    .three { width:90%; height: auto;}
+    .four {
+      width: 90%;
+      left: 0%;
+      height: auto;
+  }
+}
+
+  .flex-container-test {
+    width: 100% !important;
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+
+    .flex-item {
+      width: 90%;
+      text-align: center;
+    }
+
+    .one { width:90%; height: auto;}
+    .two { width:90%; height: auto;}
+    .three { width:90%; height: auto;}
+    .four {
+      width: 90%;
+      left: 0%;
+      height: auto;
+  }
+
+}
+
+
+}

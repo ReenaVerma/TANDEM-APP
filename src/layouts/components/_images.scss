@@ -1,5 +1,5 @@
 .logo-image {
-  width: 120px;
+  width: 100px;
   vertical-align: middle;
 }
 
@@ -11,4 +11,48 @@
   position:relative;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.card-only {
+  padding: 20px;
+  max-width: 80%;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  position:relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sub-img {
+  // border: 1px solid $white;
+  border-radius: 15px;
+  margin: 40px 20px 20px 0px;
+  max-width: 80%;
+  display: block;
+  // margin: 0 auto;
+}
+
+@media only screen and (max-width: 1199px) {
+  // .card-only {
+  //   display: none;
+  // }
+}
+
+
+@media only screen and (max-width: 786px) {
+  .card-only {
+    display: none;
+  }
+
+  .sub-img {
+    // border: 1px solid $white;
+    // border-radius: 15px;
+    padding-top: 50px;
+    margin: 0 auto;
+
+    display: block;
+    // margin: 0 auto;
+  }
 }

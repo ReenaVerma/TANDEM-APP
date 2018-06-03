@@ -1,25 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
+// import Helmet from 'react-helmet';
 
-import Navbar from '../components/Navbar';
-import MainBody from '../components/MainBody';
-import Terms from '../components/Terms';
+import Footer from '../components/Footer';
+// import MainBody from '../components/MainBody';
+// import Terms from '../components/Terms';
 import './index.scss';
 
-const Layout = ({ data }) => (
+const Layout = ({ children }) => (
   <div>
-    <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: 'Tandem App Code Test' },
-        { name: 'keywords', content: 'tandem app, reena verma, mobile banking' }
-      ]}
-    />
     <main>
-      <Navbar siteTitle={data.site.siteMetadata.title} />
-      <MainBody />
-      <Terms />
+
+      {children()}
+      <Footer />
     </main>
   </div>
 );

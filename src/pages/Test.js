@@ -1,11 +1,12 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import MainBody from '../components/MainBody';
-import Terms from '../components/Terms';
+import Navbar from '../components/test-variant/Navbar';
+import MainBody from '../components/test-variant/MainBody';
+import Terms from '../components/test-variant/Terms';
 import Helmet from 'react-helmet';
 
 
-const IndexPage = () => (
+const TestPage = () => (
+
   <div>
     <Helmet
       // title={data.site.siteMetadata.title}
@@ -20,4 +21,4 @@ const IndexPage = () => (
   </div>
 );
 
-export default IndexPage;
+export default TestPage;

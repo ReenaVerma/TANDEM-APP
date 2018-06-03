@@ -34,6 +34,7 @@ section {
   padding-top: 20px;
 }
 
+
 .grey {
   background-color: $light-grey;
   width: 100%;
@@ -80,6 +81,15 @@ section {
   }
 }
 
+footer {
+  // @include main-width;
+  // padding-top: 20px;
+  color: $black;
+  background-color: $white;
+  text-align: center;
+  height: 50px;
+}
+
 @media only screen and (max-width: 786px) {
 
 
@@ -109,8 +119,5 @@ section {
       left: 0%;
       height: auto;
   }
-
 }
-
-
 }

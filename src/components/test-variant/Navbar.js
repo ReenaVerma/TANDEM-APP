@@ -1,7 +1,7 @@
 import React from 'react';
 // import { Link, withRouter } from 'react-router-dom';
 import Link from 'gatsby-link';
-import '../layouts/index.scss';
+import '../../layouts/index.scss';
 
 class Navbar extends React.Component {
 
@@ -45,11 +45,11 @@ class Navbar extends React.Component {
         <div className={`navbar-menu ${this.state.navIsOpen ? 'is-active' : ''}`}>
           {/* when active is open */}
           <div className="navbar-end">
-            <Link className="navbar-item" to="/">HOME</Link>
-            <Link className="navbar-item" to="/">TANDEM APP</Link>
-            <Link className="navbar-item" to="/">TANDEM CARD</Link>
-            <Link className="navbar-item" to="/">BLOG</Link>
-            <Link className="navbar-item" to="/Test/">TEST VARIANT</Link>
+            <Link className="navbar-item-test" to="/">HOME</Link>
+            <Link className="navbar-item-test" to="/">TANDEM APP</Link>
+            <Link className="navbar-item-test" to="/">TANDEM CARD</Link>
+            <Link className="navbar-item-test" to="/">BLOG</Link>
+            <Link className="navbar-item-test" to="/Test/">TEST VARIANT</Link>
           </div>
         </div>
       </nav>
