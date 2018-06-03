@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
-import Header from '../components/Header';
+import Navbar from '../components/Navbar';
 import MainBody from '../components/MainBody';
 import Terms from '../components/Terms';
 import './index.scss';
@@ -17,7 +17,7 @@ const Layout = ({ data }) => (
       ]}
     />
     <main>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Navbar siteTitle={data.site.siteMetadata.title} />
       <MainBody />
       <Terms />
     </main>
