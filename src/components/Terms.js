@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 
 const Terms = () => (
-  <section className="grey">
+  <div className="section-grey">
 
     <div>
       <div className="row">
@@ -31,7 +31,7 @@ const Terms = () => (
       </div>
 
     </div>
-  </section>
+  </div>
 );
 
 export default Terms;
