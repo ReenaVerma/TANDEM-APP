@@ -1,46 +1,93 @@
-
 * {
   box-sizing: border-box;
 }
 
-body {
+body, html {
   background-color: $white;
   font-family: 'Lato', sans-serif;
   width: 100%;
+  margin: 0px;
 }
 
 main {
-  padding: 0px;
-  margin: 0px;
-  width: 100%;
+  // border: 1px solid red;
 }
 
 section {
+  @include main-width;
   margin: 0 auto;
+  padding: 0px;
   position: relative;
   top: 100px;
-  width: 100%;
 }
 
+.row {
+  @include padding-LeftRight;
+  @include main-width;
+  padding-top: 20px;
+}
 
 .grey {
-    background-color: $light-grey;
-    width: 100%;
+  background-color: $light-grey;
+  width: 100%;
+  padding-bottom: 20px;
 }
 
 .flex-container {
+  @include flex;
+  @include padding-LeftRight;
+  @include main-width;
+  -webkit-flex-flow: row;
+  justify-content: center;
+  align-content: center;
 
-    @include flex;
-     -webkit-flex-flow: row;
-     justify-content: center;
-     padding: 40px;
+  .flex-item {
+    width: 90%;
+    padding: 0px;
+    margin-top: 10px;
+    line-height: 1;
+    color: $black;
+    font-size: 1em;
+  }
 
-        & .flex-item {
-          padding: 20px;
-          width: 50%;
-          margin-top: 10px;
-          line-height: 1;
-          color: $black;
-          font-size: 1em;
-        }
+  .one { width: 60%; }
+  .two { width: 60%; }
+  .three { width: 60%; }
+  .four { width: 100%;
+    top: 50%;
+    left: 50%;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+
+  section {
+    width: 100%;
+  }
+
+  .row {
+    width: 90%;
+  }
+
+  .row {
+    text-align: left;
+  }
+
+  .flex-container {
+    width: 100% !important;
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+
+    .one { width:90%; }
+    .two { width:90%; }
+    .three { width:90%; }
+    .four {
+      width: 90%;
+      left: 0%;
+  }
+
+}
+
+
 }

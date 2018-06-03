@@ -2,25 +2,78 @@ h1 {
   font-size: 45px;
   line-height: 1;
   text-align: left;
+  font-weight: 300;
 }
 
-ul, li {
+h2 {
+  font-size: 45px;
+  font-weight: 200;
+}
 
-    &.pros {
+ul {
+  list-style: none;
+  padding: 0;
+
+  &.pros {
       font-size: 19px;
       color: $grey;
       line-height: 1.5;
-  }
+
+      li {
+        // padding-left: 1.3em;
+      }
+
+      li:before {
+        content: "\f00c";
+        font-weight: 100;
+        text-align: center;
+        background-color: $blue;
+        font-family: FontAwesome;
+        display: inline-block;
+        width: 1.3em;
+        border-radius: 50%;
+        margin: 0 auto;
+        padding: 1px;
+        margin-right: 10px;
+      }
+
+    }
 }
+
+
 
 p {
   font-size: 19px;
   color: $grey;
   line-height: 1.5;
 
+  &.legal {
+    font-size: 14px;
+    color: $medium-grey;
+
+    a {
+      color: $grey;
+      text-decoration: underline;
+
+      &:link, :active, :hover {
+        color: $grey;
+        text-decoration: underline;
+      }
+    }
+  }
+
   &.info {
     font-size: 14px;
     color: $black;
     text-decoration: underline;
+
+    a {
+      color: $grey;
+      text-decoration: underline;
+    }
   }
 }
+
+.percentage {
+    font-size: 30px;
+  }

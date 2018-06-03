@@ -1,5 +1,6 @@
 // FONT
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
 
 // COLORS
 $blue: rgb(28,223,254);
@@ -9,6 +10,7 @@ $pink: rgb(255,15,202);
 $black: rgb(24,31,34);
 $white: #fff;
 $light-grey: #e4e4e4;
+$medium-grey: #999;
 $grey: #666;
 
 // COMPONENTS
@@ -17,5 +19,6 @@ $grey: #666;
 @import "components/_typography";
 @import "components/_nav";
 @import "components/_images";
+@import "components/_buttons";
 
 // MIXINS

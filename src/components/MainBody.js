@@ -1,5 +1,5 @@
 import React from 'react';
-// import Link from 'gatsby-link';
+import Link from 'gatsby-link';
 
 const MainBody = () => (
   <section>
@@ -14,7 +14,7 @@ const MainBody = () => (
           <li>Friendly customer support from anywhere with with in-app chat</li>
         </ul>
         <p>Great the same great rewards on holiday and at home with the Travel Cashback Credit Card.</p>
-        <p className="info">See full information</p>
+        <p className="info"><Link to="">See full information</Link></p>
 
       </div>
       <div className="flex-item">

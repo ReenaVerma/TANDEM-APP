@@ -5,3 +5,13 @@
   display: -webkit-flex;
   display: flex;
 }
+
+@mixin padding-LeftRight {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@mixin main-width {
+  width: 90%;
+  margin: 0 auto;
+}
