@@ -318,7 +318,7 @@ a.navbar-item-test:hover, a.navbar-item-test.is-active,
   font-size: 60px;
   font-weight: 200;
   color: $white;
-  text-align: center;
+  text-align: left;
 }
 
 .test-h2 {
@@ -326,6 +326,13 @@ a.navbar-item-test:hover, a.navbar-item-test.is-active,
   font-weight: 200;
   color: $grey;
   text-align: center;
+}
+
+.test-h2-header {
+  font-size: 20px;
+  font-weight: 200;
+  color: $grey;
+  text-align: left;
 }
 
 .test-h3 {
@@ -380,6 +387,11 @@ a.navbar-item-test:hover, a.navbar-item-test.is-active,
   justify-content: center;
   align-content: center;
   padding-bottom: 50px;
+
+  .flex-item {
+    width: 90%;
+    // text-align: center;
+  }
 
 
   .one {
@@ -439,8 +451,6 @@ ul {
 
 .section-white-test {
   margin: 0 auto;
-  padding-bottom: 50px;
-  padding-bottom: 50px;
   position: relative;
   top: 80px;
   background-color: $white;
@@ -507,8 +517,34 @@ ul {
   }
 }
 
+@media only screen and (min-width: 789px) and (max-width: 1199px) {
+
+  .test-h1 {
+    text-align: left;
+  }
+
+  .test-h2-header {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 786px) {
 
+  .flex-item {
+    text-align: center;
+  }
+
+  .test-h1 {
+    text-align: center;
+  }
+
+  .test-h2 {
+    text-align: center;
+  }
+
+  .test-h2-header {
+    text-align: center;
+  }
 
   .row {
     width: 90%;
@@ -541,6 +577,7 @@ ul {
     display: flex;
     flex-flow: row wrap;
     font-weight: bold;
+    padding-bottom: 0px;
 
     .flex-item {
       width: 90%;

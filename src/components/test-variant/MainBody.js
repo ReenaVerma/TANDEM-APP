@@ -8,7 +8,7 @@ const MainBody = () => (
       <div className="flex-item">
         <h1 className="test-h1">A cashback credit card for holiday and home</h1>
 
-        <p className="test-h2">Great the same great rewards on holiday and at home with the Travel Cashback Credit Card.</p>
+        <p className="test-h2-header">Great the same great rewards on holiday and at home with the Travel Cashback Credit Card.</p>
         <p><button className="test">Apply Now</button></p>
 
         {/* <p className="info"><Link to="">See full information</Link></p> */}

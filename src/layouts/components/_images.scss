@@ -34,10 +34,12 @@
   // margin: 0 auto;
 }
 
-@media only screen and (max-width: 1199px) {
-  // .card-only {
-  //   display: none;
-  // }
+@media only screen and (min-width: 789px) and (max-width: 1199px) {
+
+  .sub-img {
+    max-width: 90%;
+  }
+
 }
 
 
