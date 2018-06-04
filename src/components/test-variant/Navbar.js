@@ -47,7 +47,7 @@ class Navbar extends React.Component {
           <div className="navbar-end">
             <Link className="navbar-item-test" to="/">HOME</Link>
             <Link className="navbar-item-test" to="/">TANDEM APP</Link>
-            <Link className="navbar-item-test" to="/">TANDEM CARD</Link>
+            <Link className="navbar-item-test" to="/">TANDEM CARD - APPLY</Link>
             <Link className="navbar-item-test" to="/">BLOG</Link>
             <Link className="navbar-item-test" to="/Test/">TEST VARIANT</Link>
           </div>
